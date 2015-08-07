@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9r-6U-XwT" userLabel="Fade">
+                                <rect key="frame" x="200" y="102" width="200" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Nje-yU-nzH"/>
+                                    <constraint firstAttribute="height" constant="200" id="ylH-Iz-72T"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5F-zh-Bmk" userLabel="Main">
+                                <rect key="frame" x="200" y="102" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="87T-6h-zCg"/>
+                                    <constraint firstAttribute="height" constant="200" id="d6G-M0-k9X"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="d9r-6U-XwT" firstAttribute="leading" secondItem="Z5F-zh-Bmk" secondAttribute="leading" id="1qe-bs-GgC"/>
+                            <constraint firstAttribute="centerX" secondItem="Z5F-zh-Bmk" secondAttribute="centerX" id="2XN-59-bu1"/>
+                            <constraint firstItem="d9r-6U-XwT" firstAttribute="top" secondItem="Z5F-zh-Bmk" secondAttribute="top" id="VRB-4B-ZsB"/>
+                            <constraint firstItem="Z5F-zh-Bmk" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="82" id="nW7-E4-Y3X"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="box" destination="Z5F-zh-Bmk" id="RX9-6v-jkR"/>
+                        <outlet property="boxVerticalSpace" destination="nW7-E4-Y3X" id="4L3-4J-Hk5"/>
+                        <outlet property="fadeBox" destination="d9r-6U-XwT" id="sCT-Yu-yBB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
